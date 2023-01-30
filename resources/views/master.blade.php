@@ -17,8 +17,12 @@
 </head>
 <body>
     
+    {{View::make('header')}}
+    @yield('content')
+    {{View::make('footer')}}
+
 </body>
-<script>
+<!-- <script>
     $(document).ready(function()
         {
             $("button").click(function()
@@ -27,6 +31,11 @@
             })
         }
     )
-</script>
-
+</script> -->
+<style>
+    .custom-login {
+        height: 500px;
+        padding-top: 100px;
+    }
+</style>
 </html>
