@@ -20,8 +20,9 @@ class UserController extends Controller
             return "Username or password is not matched";
         }
         else{
-            //$req->session()->put('user',$user);
-            echo $user;
+            $req->session()->put('user',$user);
+            return redirect('/');
+            //echo $user;
         }
     }
 }

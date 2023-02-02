@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/login', function () {
 });
 
 Route::POST("/login", [UserController::class,'login']);
+Route::get("/", [ProductionController::class,'index']);
