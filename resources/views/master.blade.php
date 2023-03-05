@@ -47,6 +47,9 @@
     .slider-text{
         background-color: #35443585 !important;
     }
+    .slider-img{
+        margin: auto;
+    }
     .trending-image{
         height: 100px;
     }
@@ -56,6 +59,12 @@
     }
     .trending-wrapper{
         margin: 30px;
+    }
+    .trending-name{
+        font-size: 15px;
+    }
+    .detail-img{
+        height: 200px;
     }
 </style>
 </html>

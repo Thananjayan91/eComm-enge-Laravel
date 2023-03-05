@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ProductionController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +20,6 @@ Route::get('/login', function () {
 });
 
 Route::POST("/login", [UserController::class,'login']);
-Route::get("/", [ProductionController::class,'index']);
+Route::get("/", [ProductController::class,'index']);
+Route::get("/detail/{id}", [ProductController::class,'detail']);
+Route::post("add_to_cart", [ProductController::class,'addToCart']);

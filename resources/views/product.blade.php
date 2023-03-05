@@ -35,14 +35,15 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div class="trending-wrapper">
+
+      <div class="trending-wrapper"> 
         <h3>Trending Products</h3>
         @foreach($products as $item)
         <div class="trening-item">
           <a href="detail/{{$item['id']}}">
           <img class="trending-image" src="{{$item['gallery']}}">
-          <div class="">
-            <h3>{{$item['name']}}</h3>
+          <div class="trending-name">
+            <p>{{$item['name']}}</p>
           </div>
         </a>
         </div>
