@@ -11,7 +11,7 @@ class ProductionController extends Controller
 {
     //
     function index(){
-        //return Product::all;
+        //return Product::all();
 
         $data = Product::all();
 
